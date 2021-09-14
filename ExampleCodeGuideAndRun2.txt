@@ -1,0 +1,18 @@
+
+::"C:\Program Files\R\R-3.6.1\bin\Rscript.exe" "D:\Dropbox\Teaching\Guest\BatchWorkflow\Work\RunRFilesWithBatch.R"
+::Old verison of R
+
+"C:\Program Files\R\R-4.1.0\bin\Rscript.exe" "D:\Dropbox\Teaching\Guest\BatchWorkflow\Work\RunRFilesWithBatch.R"
+
+::Trying to do it after adding R to PATH
+Rscript "D:\Dropbox\Teaching\Guest\BatchWorkflow\Work\RunRFilesWithBatch.R"
+
+python "D:\Dropbox\Teaching\Guest\BatchWorkflow\Work\RunPythonFilesWithBatch.py"
+::This works, because I added the python executable to my computers PATH and called it python.
+
+"C:\Program Files\Stata16\StataMP-64.exe" /e do "D:\Dropbox\Teaching\Guest\BatchWorkflow\Work\RunDoFilesinBatch.do"
+::Stata has its own way to run in "batch mode"
+:: The /e means that I want it to output a log file.
+
+@pause
+:: This instructs the batch to not close the output log after being used
